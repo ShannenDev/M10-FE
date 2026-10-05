@@ -71,7 +71,7 @@ def health_check():
 
 
 # Task 7: Define /predict Endpoint
-@app.get("/predict")
+@app.post("/predict")
 def predict_default(applicant: LoanApplicant):
     """
     Accepts customer attributes via JSON body and returns
